@@ -29,7 +29,7 @@ function scss() {
 }
 
 function img() {
-    return src( 'src/img/**.png' )
+    return src( 'src/img/*' )
             .pipe( image() )
             .pipe( dest('dist/img') )
 }
@@ -45,10 +45,10 @@ function serve() {
 
     watch( 'src/**.html', series( html ) ).on( 'change', sync.reload )
     watch( 'src/scss/**.scss', series( scss ) ).on( 'change', sync.reload )
-    watch( 'src/img/**.png', series( img ) ).on( ['add', 'change'], sync.reload )
+    watch( 'src/img/*', series( img ) ).on( ['add', 'change'], sync.reload )
 }
 
 
 exports.build = series(  clear, scss, html )
-exports.serve = series ( clear, scss, html, serve )
+exports.serve = series ( clear, scss, html, img, serve )
 exports.clear = clear

@@ -157,7 +157,8 @@ select {
     font-family: $gothic;
 
     &__image {
-        margin-right: 90px;    
+        margin-right: 90px;
+        margin-bottom: 121px;    
     }
 
     &__small_text {
@@ -191,5 +192,77 @@ select {
         line-height: 24px;
         text-decoration: none;
         color: #002B40;
+    }
+}
+
+// trust block
+.trust {
+    max-width: 1043px;
+    width: 100%;
+
+    &__wrapper {
+        margin-left: 126px;
+        width: 100%;
+    }
+
+    &__small_text {
+        font-size: 12px;
+        color: #5E7177;
+        font-family: $gothic;
+        background: #EFF2F3;
+        padding: 9px 11px 12px 11px;
+        display: inline-block;
+    }
+
+    &__heading {
+        max-width: 784px;
+        width: 100%;
+        font-size: 36px;
+        font-family: $gothic;
+        font-weight: normal;
+        margin-bottom: 104px;
+    }
+
+    &__heading_green {
+        color: #00755F;
+    }
+
+    &__card_wrapper {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    &__card {
+        font-family: $gothic;
+        display: flex;
+        align-items: flex-start;
+        margin-right: 75px;
+
+    }
+
+    &__card_image {
+        margin-top: -20px;
+    }
+
+    &__card_text_heading {
+        font-size: 17px;
+        margin-bottom: 19px;
+    }
+
+    &__card_text {
+        max-width: 247px;
+        width: 100%;
+        line-height: 27px;
+        font-size: 18px;
+        font-family: $amiri;
+        margin-bottom: 52px;
+    }
+    
+
+    &__card_link {
+        text-decoration: none;
+        color: #002B40;
+        font-size: 15px;
     }
 }
