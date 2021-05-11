@@ -238,7 +238,7 @@ select {
         display: flex;
         align-items: flex-start;
         margin-right: 75px;
-
+        margin-bottom: 82px;
     }
 
     &__card_image {
@@ -264,5 +264,91 @@ select {
         text-decoration: none;
         color: #002B40;
         font-size: 15px;
+    }
+}
+
+// connected data block
+.connected-data {
+    display: flex;
+    background: #002B40;
+
+    &__text-block {
+        max-width: 424px;
+        width: 100%;
+        margin-left: 136px;
+        margin-top: 193px;
+    }
+
+    &__title {
+        font-size: 59px;
+        line-height: 61px;
+        color: #fff;
+        font-family: $gothic;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        margin-bottom: 19px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 15px;
+        font-family: $gothic;
+        text-decoration: none;
+    }
+}
+
+// blocks
+.blocks {
+    margin-left: 700px;
+    margin-top: 200px;
+
+    &__main {
+        padding: 15px;
+        border: 2px solid #fff;
+    }
+
+    &__inner {
+        border: 2px solid #fff;
+        padding: 119px 50px 105px 45px;
+    }
+
+    &__inner-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        font-family: $amiri;
+        max-width: 176px;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    &__inner-text {
+        line-height: 1.1;
+        margin-left: 15px;
+    }
+
+    .small-block {
+        height: 84px;
+        width: 84px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 12px;
+
+        &__content {
+            max-width: 65px;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
