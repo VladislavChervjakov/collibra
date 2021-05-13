@@ -2,6 +2,11 @@
 $gothic: 'Gothic A1', sans-serif;
 $amiri: 'Amiri', serif;
 
+//colors for blocks
+$white: #fff;
+$dark-green: #00755F;
+$light-green: #72BF00;
+
 /* delete default syles */
 
 *,
@@ -277,6 +282,8 @@ select {
         width: 100%;
         margin-left: 136px;
         margin-top: 193px;
+        margin-right: 300px;
+
     }
 
     &__title {
@@ -301,12 +308,16 @@ select {
         font-family: $gothic;
         text-decoration: none;
     }
+
+    &__blocks {
+        margin-top: 200px;
+    }
 }
 
 // blocks
 .blocks {
-    margin-left: 700px;
-    margin-top: 200px;
+    margin-bottom: 500px;
+    position: relative;
 
     &__main {
         padding: 15px;
@@ -341,14 +352,80 @@ select {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid #fff;
+        border-width: 3px;
+        border-style: solid;
         color: #fff;
         font-size: 12px;
-
+        position: absolute;
         &__content {
             max-width: 65px;
             width: 100%;
             text-align: center;
         }
+    }
+
+    &__platform {
+        top: -90px;
+        left: -15px;
+        border-color: $light-green;
+    }
+
+    &__catalog {
+        top: -120px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color: $dark-green;
+    }
+
+    &__lineage {
+        top: -67px;
+        right: -42px;
+        background-color: #002B40;
+        border-color: $white;
+    }
+
+    &__glossary {
+        bottom: -67px;
+        left: 0;
+        background-color: #002B40;
+        left: -42px;
+        border-color: $light-green;
+    }
+
+    &__shopping {
+        bottom: -90px;
+        right: -10px;
+        border-color: $white;
+    }
+
+    &__privacy {
+        top: 22px;
+        left: -104px;
+        border-color: $dark-green;
+    }
+
+    &__dictionary {
+        left: -114px;
+        top: 161px;
+        border-color: $white;
+    }
+
+    &__profiling {
+        right: -115px;
+        top: 50px;
+        border-color: $light-green;
+    }
+
+    &__matching {
+        right: -105px;
+        bottom: 20px;
+        border-color: $dark-green;
+    }
+
+    &__governance {
+        bottom: -147px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color: $dark-green;
     }
 }
