@@ -276,6 +276,7 @@ select {
 .connected-data {
     display: flex;
     background: #002B40;
+    position: relative;
 
     &__text-block {
         max-width: 424px;
@@ -316,7 +317,7 @@ select {
 
 // blocks
 .blocks {
-    margin-bottom: 500px;
+    margin-bottom: 900px;
     position: relative;
 
     &__main {
@@ -427,5 +428,91 @@ select {
         left: 50%;
         transform: translateX(-50%);
         border-color: $dark-green;
+    }
+}
+// tabs
+.benefits-tabs {
+    &__wrapper {
+        max-width: 1200px;
+        width: 100%;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    
+
+    &__controls {
+        max-width: 356px;
+        background: #00755F;
+        width: 100%;
+    }
+
+    &__controls-heading {
+       padding-left: 56px;
+       padding-top: 62px;
+       padding-bottom: 19px;
+       max-width: 272px;
+       width: 100%;
+       font-size: 20px;
+       font-family: $gothic;
+       color: #fff;
+       font-weight: normal;
+    }
+
+    &__controls-item {
+        padding-left: 56px;
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 17px;
+        color: #fff;
+        font-family: $gothic;
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: #005D4C;
+        }
+
+        img {
+            margin-right: 17px;
+        }
+    }
+
+    &__content {
+        max-width: 832px;
+        width: 100%;
+        background-color: #DFE6E8;
+        font-family: $gothic;
+    }
+
+    &__content-container {
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+        color: #002B40;
+    }
+
+    &__content-title {
+        margin-top: 62px;
+        margin-bottom: 29px;
+        font-size: 23px;
+    }
+
+    &__content-text {
+        font-size: 18px;
+        font-family: $amiri;
+        line-height: 27px;
+        font-weight: normal;
+        margin-bottom: 16px;
+    }
+
+    &__content-link {
+        text-decoration: none;
+        font-family: $gothic;
+        font-size: 15px;
+        margin-bottom: 66px;
+        display: inline-block;
+        color: #002B40;
     }
 }
